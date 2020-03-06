@@ -2,6 +2,11 @@ runtime! archlinux.vim
 set relativenumber
 syntax on
 
+" indent width
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 " air-line
 let g:airline_powerline_fonts = 1
 
