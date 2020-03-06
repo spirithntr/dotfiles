@@ -40,3 +40,7 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 colors gruvbox
 set background=dark
+
+" white space characters
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set list
