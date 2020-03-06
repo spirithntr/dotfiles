@@ -1,5 +1,6 @@
 runtime! archlinux.vim
 set relativenumber
+syntax on
 
 " air-line
 let g:airline_powerline_fonts = 1
@@ -35,4 +36,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
+Plug 'morhetz/gruvbox'
 call plug#end()
+colors gruvbox
+set background=dark
