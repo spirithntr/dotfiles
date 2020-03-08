@@ -47,5 +47,5 @@ colors gruvbox
 set background=dark
 
 " white space characters
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
 set list
