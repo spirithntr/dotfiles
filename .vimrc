@@ -1,6 +1,8 @@
 runtime! archlinux.vim
 set relativenumber
+set hlsearch
 syntax on
+set encoding=utf-8
 
 " indent width
 set tabstop=2
@@ -42,6 +44,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'preservim/nerdtree'
+Plug '/usr/bin/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --ts-completer' }
 call plug#end()
 colors gruvbox
 set background=dark
@@ -49,3 +55,12 @@ set background=dark
 " white space characters
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
 set list
+
+" windows remaps
+let mapleader= " "
+nmap <leader>h :wincmd h<CR>
+nmap <leader>j :wincmd j<CR>
+nmap <leader>k :wincmd k<CR>
+nmap <leader>l :wincmd l<CR>
+nmap <leader>f :NERDTreeToggle<CR>
+
